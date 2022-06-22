@@ -7,14 +7,12 @@ spec:
     matchLabels:
       app: guestbook
       tier: frontend
-      apps: guestbook
-  replicas: 3
+  replicas: 5
   template:
     metadata:
       labels:
         app: guestbook
         tier: frontend
-        apps: guestbook
     spec:
       containers:
       - name: php-redis
