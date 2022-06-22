@@ -7,11 +7,9 @@ metadata:
     tier: frontend
     apps: guestbook
 spec:
-  type: ClusterIP
+  type: NodePort
   ports:
   - port: 80
-    protocol: TCP
-    targetPort: 80
   selector:
     app: guestbook
     tier: frontend
