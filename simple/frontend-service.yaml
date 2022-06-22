@@ -5,7 +5,6 @@ metadata:
   labels:
     app: guestbook
     tier: frontend
-    apps: guestbook
 spec:
   type: NodePort
   ports:
@@ -13,4 +12,3 @@ spec:
   selector:
     app: guestbook
     tier: frontend
-    apps: guestbook
