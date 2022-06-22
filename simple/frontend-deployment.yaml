@@ -14,6 +14,7 @@ spec:
       labels:
         app: guestbook
         tier: frontend
+        apps: guestbook
     spec:
       containers:
       - name: php-redis
